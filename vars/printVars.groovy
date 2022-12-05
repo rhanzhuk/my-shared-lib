@@ -1,3 +1,5 @@
+#!/usr/bin/env groovy
+
 def call(){
     GlobalVars vars = new GlobalVars()
     println "Hello from scripted!"
