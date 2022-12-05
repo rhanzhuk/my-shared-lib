@@ -2,6 +2,7 @@
 
 def call(){
     GlobalVars vars = new GlobalVars()
+    vars.setCommit("$env.GIT_PREVIOUS_COMMIT")
     println "Hello from scripted!"
     if (vars.getCommit() == "") {
         println "NOTHING FROM CLASS"
