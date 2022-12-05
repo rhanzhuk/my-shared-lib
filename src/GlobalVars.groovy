@@ -1,4 +1,4 @@
 class GlobalVars {
-    String commit = "TEST"
+    String commit = "$env.GIT_PREVIOUS_COMMIT"
 
 }

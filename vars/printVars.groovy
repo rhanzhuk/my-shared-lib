@@ -10,7 +10,7 @@ def call(){
     }
     println "Test from cript global var"
     println "$env.GIT_PREVIOUS_COMMIT"
-    println $env.GIT_PREVIOUS_COMMIT
+    //println $env.GIT_PREVIOUS_COMMIT
 }
 
 
