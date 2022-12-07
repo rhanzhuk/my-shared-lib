@@ -1,9 +1,10 @@
 #!/usr/bin/env groovy
 
 def call(){
-    def token = new VaultHelper()
-    def tokenRes = token.getToken().toString()
+    VaultHelper token = new VaultHelper()
+    def tokenRes = token.getToken()
     println tokenRes
+    println "Test!"
 
     // its work
     //println "$env.GIT_PREVIOUS_COMMIT"
