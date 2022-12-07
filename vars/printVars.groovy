@@ -13,4 +13,8 @@ def call(){
     //println "$env.GIT_PREVIOUS_COMMIT"
 }
 
+def test(){
+    return "TEST"
+}
+
 
