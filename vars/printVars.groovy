@@ -1,13 +1,6 @@
 #!/usr/bin/env groovy
 
 def call(){
-    println "Check map properties"
-    def arrayGV = GlobalVars.properties
-    arrayGV.each {it ->
-        println "$it"
-    }
-    println "++++++++++++++"
-    println arrayGV.toString()
     println "Check values"
     println GlobalVars.commit
     println GlobalVars.tag

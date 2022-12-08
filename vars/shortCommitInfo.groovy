@@ -6,7 +6,7 @@ def setCommitShort(String commit) {
         result = "$env.BUILD_NUMBER"
         return result
     } else {
-        result = "1" + commit.substring(0,7)
+        result = "1." + commit.substring(0,7)
         return result
     }
 }
