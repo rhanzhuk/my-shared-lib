@@ -7,7 +7,7 @@ def call() {
         currentBuild.result = 'ABORTED'
         println("ERROR! BUILD STOP")
     } else {
-        sh(script: "docker build -t $image")
+        sh(script: "docker build -t $image .")
         sh(script: "docker push $image")
         sh(script: "docker rmi $image")
 
