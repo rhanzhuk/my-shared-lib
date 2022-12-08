@@ -1,5 +1,5 @@
 class GlobalVars {
-    String commit
+    static String commit
     String branch
     String tag
     String envChain = "dev"
