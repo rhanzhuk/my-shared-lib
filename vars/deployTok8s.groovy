@@ -1,2 +1,6 @@
+#!/usr/bin/env groovy
 
-println "Deploy to k8s cluster"
+call() {
+    def imageDep = GlobalVars.image
+    sh (script: "ssh root@65.108.155.54 \"kubectl set image -n default deployment/spring-flyway-outside spring-flyway-outside=$imageDep\"")
+}
