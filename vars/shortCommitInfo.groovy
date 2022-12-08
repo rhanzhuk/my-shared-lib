@@ -1,5 +1,5 @@
 //Получение короткого коммита (для дисплея в дженкинсе)
-#!/usr/bin/env groovy
+//#!/usr/bin/env groovy
 def setCommitShort(String commit) {
     String result
     if (commit == null) {
