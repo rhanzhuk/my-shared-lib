@@ -2,7 +2,7 @@
 
 def call() {
     //TODO test to use current build !!!REMOVE after
-    def image = GlobalVars.image
+    def image = null//GlobalVars.image
     if (image == null) {
         currentBuild.result = 'ABORTED'
         println("ERROR! BUILD STOP")
