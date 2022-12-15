@@ -8,5 +8,10 @@ def call (){
 }
 
 def testCall() {
-    return "Test from another method from script!"
+    int a = 1
+    int b = 2
+    if (a < b) {
+        return "Test from another method from script!"
+    }
+    error("Test error!!!!!!!!!!!!!!")
 }
