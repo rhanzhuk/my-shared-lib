@@ -1,7 +1,7 @@
 #!/usr/bin/env groovy
 
 def call() {
-    node ('65.108.210.185') {
+    node {
         withCredentials([usernamePassword(credentialsId: 'jenkins-auth-creds', usernameVariable: "USERNAME", passwordVariable: 'PASSWORD')]) {
             println "Get token from library"
 
