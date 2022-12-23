@@ -2,10 +2,13 @@
 
 def call() {
     withCredentials([usernamePassword(credentialsId: 'jenkins-auth-creds', usernameVariable: "USERNAME", passwordVariable: 'PASSWORD')]) {
-        println "Check use withCreds from library"
+        println "Get token from library"
 
-        println "username: ${USERNAME}"
-        println "password: ${PASSWORD}"
+        //println "username: ${USERNAME}"
+        //println "password: ${PASSWORD}"
+
+        def token = sh(script: "curl -X POST --data '{\"password\" : \"'${PASSWORD}'\"}' http://65.108.210.185:8211/v1/auth/userpass/login/${USERNAME} | jq -r .auth.client_token")
+        println token
     }
 
 }
