@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cdc2203d-5683-462a-b74b-3aacb2f60588" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars/vault.groovy" beforeDir="false" afterPath="$PROJECT_DIR$/vars/vault.groovy" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +46,7 @@
       <workItem from="1669983136291" duration="3069000" />
       <workItem from="1670225687309" duration="20156000" />
       <workItem from="1670602616380" duration="16540000" />
-      <workItem from="1671712343660" duration="8189000" />
+      <workItem from="1671712343660" duration="9070000" />
     </task>
     <servers />
   </component>
