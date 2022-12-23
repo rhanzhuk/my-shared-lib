@@ -8,7 +8,7 @@ def call() {
         //println "password: ${PASSWORD}"
 
         def token = sh(script: "curl -X POST --data '{\"password\" : \"'${PASSWORD}'\"}' http://65.108.210.185:8211/v1/auth/userpass/login/${USERNAME} | jq -r .auth.client_token", returnStdout: true)
-        println token
+        //println token
     }
 
 }
